@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    font-size: 3rem;
+    background-color: rgb(255, 171, 156);
+    color: crimson;
+    padding: 40px;
+    border: 2px solid tomato;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px black;
+}
+
+button::before{
+    content: "Pasa por encima";
+}
+
+button:hover {
+    cursor: pointer;
+    color:white;
+    background-color: darkolivegreen;
+    border-color: rgb(25, 31, 16);    
+}
+
+button:hover::before {
+    content: "¡Hecho!";
+}
